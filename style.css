@@ -1,0 +1,86 @@
+/* 
+
+        CSS EXERCISES
+
+        11) Give a maximum width to the body and center it into the page
+        12) Set every h1 to be centered
+        13) Change the color of each link in the page
+        14) Create a class with a border assigned to it
+        15) Set the previously created table to have rounded corners
+        16) Add a margin between every paragraph
+        17) Create a class which changes font size and text weight when applied
+        18) Create a class to hide a piece of content
+        19) Add a green border to each <td>
+        20) Add a dotted red border to each <tr> (note: <tr> does not accept a border property)
+*/
+body {
+  margin: auto;
+  background-color: #fff;
+  color: rgba(28, 9, 80, 0.75);
+  font-family: "Roboto", sans-serif;
+  max-width: 1200px;
+}
+
+.heading {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: medium;
+}
+.list p {
+  text-align: justify;
+  margin: 10px;
+  font-size: 20px;
+}
+.list li {
+  list-style-type: "*";
+}
+.table-display {
+  border: 1px solid #363635;
+  border-radius: 15px;
+  overflow: auto;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-style: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+table,
+th {
+  border: 2px solid #363635;
+  padding: 3px;
+  text-align: center;
+}
+td {
+  border: 2px solid green;
+  padding: 3px;
+}
+tr {
+  outline: 0.1px dotted red;
+}
+thead {
+  background-color: rgba(28, 9, 80, 0.75);
+  height: 30px;
+}
+a {
+  color: rgb(172, 115, 50);
+  text-decoration: none;
+  padding-right: 20px;
+}
+.border-class {
+  border: 1px solid black;
+}
+footer {
+  text-align: center;
+}
+.change-font {
+  font-size: 20px;
+  font-weight: 100;
+}
+.hidden {
+  display: none;
+}

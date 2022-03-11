@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Fruit Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- HTML EXERCISES
+
+        1) Create a title for this webpage
+        2) Create a heading of your choice
+        3) Create an ordered list with some list items into it
+        4) Create a table with 5 columns and 4 rows
+        5) Add an image to each second cell of every row
+        6) Add a anchor link for every image
+        7) Merge together 2 table cells
+        8) Divide the page using a horizontal line
+        9) Create a container with a nested paragraph and a nested unordered list
+        10) Create a footer with some information about the page creator
+     -->
+<body>
+    <div class="heading">
+        <h1 id="head" onclick="headingChange()">Welcome to amazing Fruit store</h1>
+    </div>
+    <div class="list">
+        <p>Here's a list of some sweet fruits we have</p>
+        <ul>
+            <li>Mango</li>
+            <li>Orang</li>
+            <li>Apple</li>
+            <li>Avocado</li>
+            <li>Cherry</li>
+            <li>Apricot </li>
+        </ul>
+    </div>
+    <div>
+        <div class="heading">
+            <h3>Fresh Fruits</h3>
+        </div>
+    <div class="table-display">
+    <table >
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Fruits</th>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Availability</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2"><a href="#">Avocado</a><img src="https://www.kindpng.com/picc/m/224-2247475_avocado-palta-zutano-hd-png-download.png" alt="Avocado" width="60" height="60"></td>
+          <!-- <td></td> -->
+          <td>Fresh Avocado</td>
+          <td>€ 30</td>
+          <td>In Stock</td>
+        </tr>
+        <tr>
+          <td colspan="2"><a href="#">Orange</a><img src="https://media.istockphoto.com/photos/whole-cross-section-and-quarter-of-fresh-organic-navel-orange-with-picture-id1227301369?k=20&m=1227301369&s=170667a&w=0&h=V37dnEiMyMvFOJ5YOhMhK4lPYnQMut_2SEx2ahYQbtU=" alt="Orange" width="60" height="60"></td>
+          <!-- <td></td> -->
+          <td>Fresh Bio Orange</td>
+          <td>€ 20</td>
+          <td>In Stock</td>
+        </tr>
+        <tr>
+          <td colspan="2"><a href="#">Apple</a><img src="https://freshron.com/wp-content/uploads/2019/11/apple.jpg" alt="Apple" width="60" height="60"></td>
+          <!-- <td></td> -->
+          <td>Fresh Bio Apples</td>
+          <td>€ 40</td>
+          <td>In Stock</td>
+        </tr>
+        <tr>
+          <td colspan="2"><a href="#">Grapes</a><img src="https://media.istockphoto.com/photos/green-grape-isolated-on-white-background-picture-id489520104?k=20&m=489520104&s=612x612&w=0&h=n1_B8jn9fb4dQibPhkXftNpjKA4Rvrjp_ttgj6sq5jY=" alt="Grapes" width="60" height="60"></td>
+          <!-- <td></td> -->
+          <td>Fresh Grapes</td>
+          <td>€ 50</td>
+          <td>In Stock</td>
+        </tr>
+      </tbody>
+    </table>   
+    </div>
+</div>
+  <div>
+      <br>
+    <hr>
+    <br>
+  </div>
+  <div id="container">
+      <div class="list">
+        <p>This is a list of other fruits we have </p>
+      </div>
+     <div class="list">
+        <ul>
+            <li>Mango</li>
+            <li>Orang</li>
+            <li>Apple</li>
+            <li>Avocado</li>
+            <li>Cherry</li>
+            <li>Apricot </li>
+        </ul>
+     </div>
+
+  </div>
+  <footer>&#169; SingingCodes 2022</footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
+  <!--
+
+        DOM EXERCISES
+
+     
+
+        EXTRA EXERCISES
+
+        41) Add an eventListener to show an alert when the cursor hovers a link, displaying its href property
+        42) Create a button that will hide every image on the page when clicked
+        43) Create a button that will hide or show the table on the page when clicked
+        44) Write a function for calculating the sum of every number inside all the table cells (if their content is numeric)
+        45) Delete the last letter from the heading each time the user clicks on it
+        46) Change the background color of a <td> if the user clicks on it
+        47) Add a delete button at the bottom of the table, when clicked it should delete a random <td>
+        48) Add automatically a pink border to a cell when the mouse hovers it
+        49) Write a function to create a table with 4 rows and 3 columns programmatically and add it to the bottom of the page
+        50) Write a function to remove the last table from the page
+
+        /* WHEN YOU ARE FINISHED
+          Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
+        */
+    -->
