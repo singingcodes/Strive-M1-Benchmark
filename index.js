@@ -21,7 +21,7 @@ let myDetails = {
 };
 delete myDetails.email;
 //console.log(myDetails);
-fruits = [
+let fruits = [
   "Apple",
   "Banana",
   "Orange",
