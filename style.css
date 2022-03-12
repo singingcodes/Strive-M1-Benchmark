@@ -14,11 +14,12 @@
         20) Add a dotted red border to each <tr> (note: <tr> does not accept a border property)
 */
 body {
-  margin: auto;
   background-color: #fff;
   color: rgba(28, 9, 80, 0.75);
   font-family: "Roboto", sans-serif;
   max-width: 1200px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 .heading {
@@ -38,7 +39,7 @@ body {
 }
 .table-display {
   border: 1px solid #363635;
-  border-radius: 15px;
+  border-radius: 1.5em;
   overflow: auto;
 }
 table {
@@ -83,4 +84,7 @@ footer {
 }
 .hidden {
   display: none;
+}
+.changeBg {
+  background-color: red;
 }
