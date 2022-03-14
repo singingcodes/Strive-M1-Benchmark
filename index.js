@@ -160,3 +160,99 @@ function emptyList() {
   ListNode.innerHTML = "";
 }
 emptyList();
+
+// EXTRA EXERCISES
+
+// 41) Add an eventListener to show an alert when the cursor hovers a link, displaying its href property
+function alertUrl() {
+  let links = document.querySelector("a");
+  for (let i = 0; i < links.length; i++) {
+    links[i].onmouseenter = function (e) {
+      alert(e.target.href);
+    };
+  }
+}
+alertUrl();
+// 42) Create a button that will hide every image on the page when clicked
+function hideButton() {
+  let imgNode = document.querySelectorAll("img");
+  imgNode.forEach((img) => {
+    img.classList.add("hidden");
+  });
+}
+
+// 43) Create a button that will hide or show the table on the page when clicked
+function toggleTable() {
+  let tableNode = document.querySelector("table");
+  tableNode.classList.toggle("hidden");
+}
+// 44) Write a function for calculating the sum of every number inside all the table cells (if their content is numeric)
+function sumNumbers() {
+  const tds = document.querySelectorAll("td");
+  let sum = 0;
+  tds.forEach((td) => {
+    let toNumber = parseInt(td.innerText);
+    let isNotNumeric = isNaN(toNumber);
+    if (!isNotNumeric) {
+      sum += toNumber;
+    }
+  });
+  console.log(sum);
+}
+sumNumbers();
+// 45) Delete the last letter from the heading each time the user clicks on it
+
+const deleteLastChar = function () {
+  const h1 = document.querySelector("h1");
+  h1.onclick = function (e) {
+    h1.innerText = h1.innerText.substring(0, h1.innerText.length - 1);
+  };
+};
+deleteLastChar();
+// 46) Change the background color of a <td> if the user clicks on it
+function changeTdBg() {
+  let tds = document.querySelectorAll("td");
+  tds.forEach((td) => {
+    td.onclick = function (e) {
+      e.target.classList.toggle("changeBg");
+    };
+  });
+}
+changeTdBg();
+// 47) Add a delete button at the bottom of the table, when clicked it should delete a random <td>
+function deleteTable() {
+  let randomTd = document.querySelectorAll("td");
+  const random = Math.floor(Math.random() * randomTd.length);
+  randomTd[random].remove();
+}
+// 48) Add automatically a pink border to a cell when the mouse hovers it
+function addPinkBorder() {
+  let cells = document.querySelectorAll("td");
+  cells.forEach((td) => {
+    td.onmouseenter = function (e) {
+      e.target.classList.add("border-pink");
+    };
+    td.onmouseleave = function (e) {
+      e.target.classList.remove("border-pink");
+    };
+  });
+}
+addPinkBorder();
+// 49) Write a function to create a table with 4 rows and 3 columns programmatically and add it to the bottom of the page
+function createTable() {
+  let newTable = document.createElement("table");
+  for (let i = 0; i < 4; i++) {
+    let tableRow = document.createElement("tr");
+    for (let m = 0; m < 3; m++) {
+      let tableColumn = document.createElement("td");
+      tableColumn.innerText = "cell";
+      tableRow.appendChild(tableColumn);
+    }
+    newTable.appendChild(tableRow);
+  }
+  document.body.appendChild(newTable);
+}
+// 50) Write a function to remove the last table from the page
+function removeTable() {
+  document.querySelector("table:last-of-type").remove();
+}

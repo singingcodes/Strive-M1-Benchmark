@@ -17,9 +17,8 @@ body {
   background-color: #fff;
   color: rgba(28, 9, 80, 0.75);
   font-family: "Roboto", sans-serif;
-  max-width: 1200px;
-  margin-left: 250px;
-  margin-right: 250px;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .heading {
@@ -87,4 +86,7 @@ footer {
 }
 .changeBg {
   background-color: red;
+}
+.border-pink {
+  border: 2px solid palevioletred;
 }
